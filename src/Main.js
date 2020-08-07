@@ -56,7 +56,7 @@ var LegendofZelda;
         }
     }
     async function loadJSONFiles() {
-        let response = await fetch("https://github.com/kleenedany/tree/master/json/gameInfo.json");
+        let response = await fetch("../json/gameInfo.json");
         offer = await response.text();
         jsonData = JSON.parse(offer);
     }
