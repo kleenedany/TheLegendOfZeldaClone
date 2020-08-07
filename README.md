@@ -4,9 +4,9 @@
  
 [Spiel auf GitHub Pages](https://kleenedany.github.io/TheLegendOfZeldaClone/)
 
-Designdokument
+[Designdokument](https://github.com/kleenedany/TheLegendOfZeldaClone/blob/master/Designdokument.pdf)
 
-Gepacktes Archiv
+[Gepacktes Archiv](https://github.com/kleenedany/TheLegendOfZeldaClone/blob/master/TheLegendofZelda.rar)
 
 [Quellcode](https://github.com/kleenedany/TheLegendOfZeldaClone)
 
