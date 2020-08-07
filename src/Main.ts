@@ -66,7 +66,7 @@ namespace LegendofZelda {
     }
 
     async function loadJSONFiles(): Promise<void> {
-        let response: Response = await fetch("../json/gameInfo.json");
+        let response: Response = await fetch("../../json/gameInfo.json");
         offer = await response.text();
         jsonData = JSON.parse(offer);
     }
