@@ -56,7 +56,7 @@ var LegendofZelda;
         }
     }
     async function loadJSONFiles() {
-        let response = await fetch("../../json/gameInfo.json");
+        let response = await fetch("TheLegendOfZeldaClone/json/gameInfo.json");
         offer = await response.text();
         jsonData = JSON.parse(offer);
     }
