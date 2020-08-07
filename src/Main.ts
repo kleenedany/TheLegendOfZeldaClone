@@ -132,7 +132,7 @@ namespace LegendofZelda {
     }
 
     async function audio(): Promise<void> {
-        audioBackground = await f.Audio.load("../soundfiles/BackgroundMusic.mp3");
+        audioBackground = await f.Audio.load("soundfiles/BackgroundMusic.mp3");
         cmpAudioBackground = new f.ComponentAudio(audioBackground, true, true);
         cmpAudioBackground.connect(true);
         changeAudioVolumne();
@@ -180,7 +180,7 @@ namespace LegendofZelda {
                         map.removeChild(node);
                         player.removeChild(arrow);
                         console.log("HIT Enemy");
-                        soundEffects("../soundfiles/EnemyDie.wav");
+                        soundEffects("soundfiles/EnemyDie.wav");
                     }
                 }
    
@@ -189,7 +189,7 @@ namespace LegendofZelda {
                         map.removeChild(node);
                         player.removeChild(arrow);
                         showGameWon();
-                        soundEffects("../soundfiles/EnemyDie.wav");
+                        soundEffects("soundfiles/EnemyDie.wav");
                     }
                 }
 
@@ -206,7 +206,7 @@ namespace LegendofZelda {
             if (hit) {
                     player.removeLife(1);
                     console.log(player);
-                    soundEffects("../soundfiles/EnemyDie.wav");
+                    soundEffects("soundfiles/EnemyDie.wav");
                      
                     if (player.getLife() == 0) {
                         showGameOver();
@@ -226,7 +226,7 @@ namespace LegendofZelda {
             if (hit) {
                     player.removeLife(1);
                     console.log(player);
-                    soundEffects("../soundfiles/EnemyDie.wav");
+                    soundEffects("soundfiles/EnemyDie.wav");
                      
                     if (player.getLife() == 0) {
                         showGameOver();
@@ -247,7 +247,7 @@ namespace LegendofZelda {
                 if (hit) {
                     player.removeLife(1);
                     console.log(player);
-                    soundEffects("../soundfiles/EnemyDie.wav");
+                    soundEffects("soundfiles/EnemyDie.wav");
                      
                     if (player.getLife() == 0) {
                         showGameOver();
@@ -259,7 +259,7 @@ namespace LegendofZelda {
                 if (hit) {
                     player.removeLife(1);
                     console.log(player);
-                    soundEffects("../soundfiles/EnemyDie.wav");
+                    soundEffects("soundfiles/EnemyDie.wav");
                      
                     if (player.getLife() == 0) {
                         showGameOver();
@@ -307,7 +307,7 @@ namespace LegendofZelda {
             case f.KEYBOARD_CODE.SPACE:
                 endboss.shootBoss();
                 enemy.shootEnemy();
-                soundEffects("../soundfiles/BowArrow.wav");
+                soundEffects("soundfiles/BowArrow.wav");
                 player.shootArrow();
                 break;
         }

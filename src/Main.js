@@ -106,7 +106,7 @@ var LegendofZelda;
         f.Loop.start(f.LOOP_MODE.TIME_GAME, 60);
     }
     async function audio() {
-        audioBackground = await f.Audio.load("../soundfiles/BackgroundMusic.mp3");
+        audioBackground = await f.Audio.load("soundfiles/BackgroundMusic.mp3");
         cmpAudioBackground = new f.ComponentAudio(audioBackground, true, true);
         cmpAudioBackground.connect(true);
         changeAudioVolumne();
@@ -145,7 +145,7 @@ var LegendofZelda;
                         map.removeChild(node);
                         player.removeChild(arrow);
                         console.log("HIT Enemy");
-                        soundEffects("../soundfiles/EnemyDie.wav");
+                        soundEffects("soundfiles/EnemyDie.wav");
                     }
                 }
                 else if (node.name == "Endboss") {
@@ -153,7 +153,7 @@ var LegendofZelda;
                         map.removeChild(node);
                         player.removeChild(arrow);
                         showGameWon();
-                        soundEffects("../soundfiles/EnemyDie.wav");
+                        soundEffects("soundfiles/EnemyDie.wav");
                     }
                 }
             }
@@ -166,7 +166,7 @@ var LegendofZelda;
             if (hit) {
                 player.removeLife(1);
                 console.log(player);
-                soundEffects("../soundfiles/EnemyDie.wav");
+                soundEffects("soundfiles/EnemyDie.wav");
                 if (player.getLife() == 0) {
                     showGameOver();
                 }
@@ -180,7 +180,7 @@ var LegendofZelda;
             if (hit) {
                 player.removeLife(1);
                 console.log(player);
-                soundEffects("../soundfiles/EnemyDie.wav");
+                soundEffects("soundfiles/EnemyDie.wav");
                 if (player.getLife() == 0) {
                     showGameOver();
                 }
@@ -195,7 +195,7 @@ var LegendofZelda;
                 if (hit) {
                     player.removeLife(1);
                     console.log(player);
-                    soundEffects("../soundfiles/EnemyDie.wav");
+                    soundEffects("soundfiles/EnemyDie.wav");
                     if (player.getLife() == 0) {
                         showGameOver();
                     }
@@ -205,7 +205,7 @@ var LegendofZelda;
                 if (hit) {
                     player.removeLife(1);
                     console.log(player);
-                    soundEffects("../soundfiles/EnemyDie.wav");
+                    soundEffects("soundfiles/EnemyDie.wav");
                     if (player.getLife() == 0) {
                         showGameOver();
                     }
@@ -244,7 +244,7 @@ var LegendofZelda;
             case f.KEYBOARD_CODE.SPACE:
                 endboss.shootBoss();
                 enemy.shootEnemy();
-                soundEffects("../soundfiles/BowArrow.wav");
+                soundEffects("soundfiles/BowArrow.wav");
                 player.shootArrow();
                 break;
         }
